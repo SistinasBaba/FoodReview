@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Food Review</string>
+    <string name="restaurant_title_hint">WHERE DID YOU EAT IT?</string>
+    <string name="restaurant_title_label">Restaurant</string>
+
+    <string name="food_title_hint">WHAT DID YOU EAT?</string>
+    <string name="food_title_label">FOOD NAME</string>
+
+    <string name="food_review_label">REVIEW</string>
+
+    <string name="food_date_label">DATE</string>
+    <string name ="date_picker_title">When did you eat it?</string>
+
+    <string name="food_rating_label">RATING</string>
+
+    <string name="new_food">NEW FOOD</string>
+
+    <string name="show_subtitle">SHOW TOTAL</string>
+    <string name="hide_subtitle">HIDE TOTAL</string>
+
+    <string name="subtitle_format">%1$d foods</string>
+
+    <string name="review_description_hint">TYPE IN YOUR THOUGHTS ON THE FOOD</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jeremy.foodreview">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/rate"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/rate"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodReview">
+        <activity android:name=".FoodListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FoodPagerActivity"
+            android:parentActivityName=".FoodListActivity">
+        </activity>
+
+        <provider
+            android:authorities="com.jeremy.foodreview.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files"/>
+        </provider>
+    </application>
+
+</manifest>
